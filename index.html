@@ -213,11 +213,10 @@
 
     <div class="container">
         <!-- Description Section with Sidebar -->
-        <section id="description">
-            <h2 class="mb-4 headline-underline">About the Workshop</h2>
-            <div class="row">
-                <!-- Main Content Column -->
-                <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-8">
+                <section id="description">
+                    <h2 class="mb-4 headline-underline">About the Workshop</h2>
                     <p>Large language models (LLMs) have rapidly evolved into powerful engines capable of driving agentic workflows, i.e., autonomous sequences of actions traditionally performed by humans (e.g., booking flights, preparing administrative forms) based on textual and/or visual inputs. Embracing collaborative and federated learning is essential in this context, as these paradigms enable the aggregation of distributed data while preserving user privacy and ensuring regulatory compliance. By keeping data localized, federated approaches allow agentic workflows to continuously learn and adapt from diverse user interactions without exposing sensitive information. This distributed learning framework not only facilitates scalable and personalized improvements but also mitigates biases by incorporating insights from a broad range of environments, ultimately amplifying the transformative potential of agentic workflows for both industry and everyday applications.</p>
 
                     <p>Recent commercial deployments, such as OpenAI Operator, highlight the significant impact of agentic workflows on the global economy and daily life. However, these workflows currently face several challenges including imprecise execution (e.g., incorrectly interacting with UI elements), suboptimal tool-use efficiency (e.g., latency in processing), and limitations in adaptive user-agent interactions (e.g., ineffective co-piloting and supervision). Additionally, while agentic workflows generate valuable data from user interactions, the sensitive and localized nature of this data creates hurdles for centralized learning approaches.</p>
@@ -225,192 +224,192 @@
                     <p>Collaborative and federated learning are powerful methodologies to overcome these challenges. They facilitate collective improvement by enabling continuous workflow optimization through the distributed updates of the model and prompts without having to share the raw data. These methods also support personalization by tailoring agentic responses to individual user styles and preferences without compromising privacy. Importantly, they maintain strict regulatory compliance by ensuring that sensitive data remains local, which a critical requirement under emerging legislative frameworks such as the EU AI Act and Canada Bill C-27.</p>
 
                     <p>This workshop uniquely focuses on the convergence of collaborative/federated learning with agentic workflows, fostering interdisciplinary research that bridges theoretical foundations, practical implementations, and regulatory considerations.</p>
+                </section>
+                <section id="cfp">
+                    <h2 class="mb-4 headline-underline">Call for Papers</h2>
+                        <p>We are soliciting contributions from the following areas (expand for further details):</p>
 
+                        <div class="accordion" id="topicsAccordion">
+                            <!-- Theory & Algorithmic Foundations -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Theory & Algorithmic Foundations for Collaborative and Federated Agentic Workflows
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#topicsAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Learnability of agentic workflows</li>
+                                            <li>Federated optimization advances (e.g., learning from scarce data)</li>
+                                            <li>Federated reinforcement learning</li>
+                                            <li>Multi-stage optimization for workflow improvement (e.g., global alignment + personalization)</li>
+                                            <li>Automatic tuning of agentic workflows across distributed users</li>
+                                            <li>Fairness, bias, and interoperability in agentic workflows</li>
+                                            <li>Robustness of agentic workflows</li>
+                                            <li>Personalization of agentic workflows</li>
+                                            <li>Multi-modal agentic workflows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Systems and Infrastructure -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Systems and Infrastructure for Collaborative and Federated Agentic Workflows
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#topicsAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Data management for federated workflows</li>
+                                            <li>Design considerations and experiences of agentic systems and their infrastructure</li>
+                                            <li>Energy efficiency quantification, measurement, and optimization for agentic workflows</li>
+                                            <li>Private and secure computing for sensitive agentic workflows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Regulatory Compliance -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Regulatory Compliance of Collaborative and Federated Agentic Workflows
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#topicsAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Trustworthiness of agentic workflows</li>
+                                            <li>Safety of agentic workflows</li>
+                                            <li>Human oversight over agentic workflows</li>
+                                            <li>Privacy in agentic workflows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mt-5">
+                            We welcome contributions that push the boundaries at this unique intersection and aim to create
+                            an engaging forum for students, scholars, and practitioners worldwide to share insights, discuss
+                            progress, and chart future directions in this exciting field. We invite <b>technical papers
+                            with up to 6 pages</b> each and <b>vision/position papers with up to 4 pages</b> each (excluding references
+                            and appendices), reviewed by a workshop program committee.
+                            All <i>double-anonymous</i> submissions must use the ICML 2025 author kit available <a href="https://icml.cc/Conferences/2025/AuthorInstructions">here</a>.
+                            The review process will be facilitated via OpenReview. Please make sure every author has an OpenReview account ahead of submission.
+                            The submission portal can be found <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic">here</a>.
+                        </p>
+                        <p>
+                            Accepted papers will be accessible via this website ahead of the workshop. Our workshop is non-archival and there are no formal proceedings.
+                            We allow submissions of manuscripts that have not been accepted by an archival conference, i.e., if your paper is in submission with an archival conference/journal at the time of the workshop submission deadline you are welcome to submit to CFAgentic.
+                        </p>
+                </section>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">News</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="small text-muted">May 25, 2025</div>
+                                <div><b>Final deadline extension</b> to May 27, 2025 11.59pm AoE due to popular demand.</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="small text-muted">May 19, 2025</div>
+                                <div><b>Deadline extended</b> to May 25, 2025 11.59pm AoE due to many requests related to the NeurIPS deadline.</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="small text-muted">May 09, 2025</div>
+                                <div>Workshop date set: Saturday, July 19, 2025 in Room 215-216.</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="small text-muted">April 02, 2025</div>
+                                <div>OpenReview <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic">submission portal</a> now available.</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="small text-muted">March 19, 2025</div>
+                                <div>Workshop proposal accepted at ICML 2025!</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Sidebar Column -->
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">News</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <div class="small text-muted">May 25, 2025</div>
-                                    <div><b>Final deadline extension</b> to May 27, 2025 11.59pm AoE due to popular demand.</div>
-                                </li>
-                                <li class="mb-3">
-                                    <div class="small text-muted">May 19, 2025</div>
-                                    <div><b>Deadline extended</b> to May 25, 2025 11.59pm AoE due to many requests related to the NeurIPS deadline.</div>
-                                </li>
-                                <li class="mb-3">
-                                    <div class="small text-muted">May 09, 2025</div>
-                                    <div>Workshop date set: Saturday, July 19, 2025 in Room 215-216.</div>
-                                </li>
-                                <li class="mb-3">
-                                    <div class="small text-muted">April 02, 2025</div>
-                                    <div>OpenReview <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic">submission portal</a> now available.</div>
-                                </li>
-                                <li class="mb-3">
-                                    <div class="small text-muted">March 19, 2025</div>
-                                    <div>Workshop proposal accepted at ICML 2025!</div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Important Dates</h5>
                     </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Important Dates</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-end">
-                                    Paper Submission Deadline
-                                    <div>
-                                        <div class="badge bg-primary">May 27, 2025, 11.59 p.m. AoE</div>
-                                        <div class="badge bg-secondary" style="text-decoration: line-through">May 25, 2025, 11.59 p.m. AoE</div>
-                                        <div class="badge bg-secondary" style="text-decoration: line-through">May 19, 2025, 11.59 p.m. AoE</div>
-                                    </div>
-
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Author Notification
-                                    <span class="badge bg-primary">June 9, 2025</span>
-                                </li>
-                                <!--li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Camera-Ready Deadline
-                                    <span class="badge bg-primary">June 19, 2025</span>
-                                </li-->
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Workshop Date & Room
-                                    <span class="badge bg-primary">Saturday, July 19, 2025</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Paper Submission Deadline
+                                <span class="badge bg-secondary" style="text-decoration: line-through">May 27, 2025, 11.59 p.m. AoE</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Author Notification
+                                <span class="badge bg-primary">June 9, 2025</span>
+                            </li>
+                            <!--li class="list-group-item d-flex justify-content-between align-items-center">
+                                Camera-Ready Deadline
+                                <span class="badge bg-primary">June 19, 2025</span>
+                            </li-->
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Workshop Date & Room
+                                <span class="badge bg-primary">Saturday, July 19, 2025</span>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Relevant Links</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a href="https://icml.cc/Conferences/2025" target="_blank" class="text-decoration-none">
-                                        ICML 2025 Main Conference
-                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="https://icml.cc/Conferences/2025/AuthorInstructions" class="text-decoration-none">
-                                        ICML 2025 Author Instructions & Author Kit
-                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic" class="text-decoration-none">
-                                        OpenReview Submission Portal
-                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="mailto:herbert.woisetschlaeger@tum.de?subject=CFAgentic@ICML25 | <YOUR TOPIC HERE>" class="text-decoration-none">
-                                        E-Mail the organizers
-                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Relevant Links</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="https://icml.cc/Conferences/2025" target="_blank" class="text-decoration-none">
+                                    ICML 2025 Main Conference
+                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://icml.cc/Conferences/2025/AuthorInstructions" class="text-decoration-none">
+                                    ICML 2025 Author Instructions & Author Kit
+                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic" class="text-decoration-none">
+                                    OpenReview Submission Portal
+                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="mailto:herbert.woisetschlaeger@tum.de?subject=CFAgentic@ICML25 | <YOUR TOPIC HERE>" class="text-decoration-none">
+                                    E-Mail the organizers
+                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0">Supported by</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <img class="img-thumbnail" style="max-width: 150px;" src="https://aij.ijcai.org/wp-content/uploads/2021/07/ARTINT_Logo2_c_web_more.jpg"/>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="cfp">
-            <h2 class="mb-4 headline-underline">Call for Papers</h2>
-                <p>We are soliciting contributions from the following areas (expand for further details):</p>
-
-                <div class="accordion" id="topicsAccordion">
-                    <!-- Theory & Algorithmic Foundations -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Theory & Algorithmic Foundations for Collaborative and Federated Agentic Workflows
-                            </button>
-                        </h3>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#topicsAccordion">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Learnability of agentic workflows</li>
-                                    <li>Federated optimization advances (e.g., learning from scarce data)</li>
-                                    <li>Federated reinforcement learning</li>
-                                    <li>Multi-stage optimization for workflow improvement (e.g., global alignment + personalization)</li>
-                                    <li>Automatic tuning of agentic workflows across distributed users</li>
-                                    <li>Fairness, bias, and interoperability in agentic workflows</li>
-                                    <li>Robustness of agentic workflows</li>
-                                    <li>Personalization of agentic workflows</li>
-                                    <li>Multi-modal agentic workflows</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Systems and Infrastructure -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Systems and Infrastructure for Collaborative and Federated Agentic Workflows
-                            </button>
-                        </h3>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#topicsAccordion">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Data management for federated workflows</li>
-                                    <li>Design considerations and experiences of agentic systems and their infrastructure</li>
-                                    <li>Energy efficiency quantification, measurement, and optimization for agentic workflows</li>
-                                    <li>Private and secure computing for sensitive agentic workflows</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Regulatory Compliance -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Regulatory Compliance of Collaborative and Federated Agentic Workflows
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#topicsAccordion">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Trustworthiness of agentic workflows</li>
-                                    <li>Safety of agentic workflows</li>
-                                    <li>Human oversight over agentic workflows</li>
-                                    <li>Privacy in agentic workflows</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="mt-5">
-                    We welcome contributions that push the boundaries at this unique intersection and aim to create
-                    an engaging forum for students, scholars, and practitioners worldwide to share insights, discuss
-                    progress, and chart future directions in this exciting field. We invite <b>technical papers
-                    with up to 6 pages</b> each and <b>vision/position papers with up to 4 pages</b> each (excluding references
-                    and appendices), reviewed by a workshop program committee.
-                    All <i>double-anonymous</i> submissions must use the ICML 2025 author kit available <a href="https://icml.cc/Conferences/2025/AuthorInstructions">here</a>.
-                    The review process will be facilitated via OpenReview. Please make sure every author has an OpenReview account ahead of submission.
-                    The submission portal can be found <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/CFAgentic">here</a>.
-                </p>
-                <p>
-                    Accepted papers will be accessible via this website ahead of the workshop. Our workshop is non-archival and there are no formal proceedings.
-                    We allow submissions of manuscripts that have not been accepted by an archival conference, i.e., if your paper is in submission with an archival conference/journal at the time of the workshop submission deadline you are welcome to submit to CFAgentic.
-                </p>
-        </section>
+        </div>
 
         <!-- Invited Speakers Section -->
         <section id="speakers">
