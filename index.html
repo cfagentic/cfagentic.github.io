@@ -163,6 +163,18 @@
             }
         }
 
+        .table-hover tbody tr:hover {
+            background-color: #f8f9fa;
+            transition: background-color 0.15s ease-in-out;
+        }
+        .break-row {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+        .break-row:hover {
+            background-color: #dee2e6 !important;
+        }
+
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -440,16 +452,6 @@
                 <div class="col d-flex">
                     <div class="card speaker-card w-100">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="https://jafermarq.com/" target="_blank" class="no-underline">Javier Fernandez-Marques</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Research Scientist at Flower Labs</h6>
-                            <p class="card-text mt-auto"><strong>Topic area:</strong> Federated learning and hardware-aware optimizations</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card speaker-card w-100">
-                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><a href="https://www.autonomousagents.stanford.edu/" target="_blank" class="no-underline">Nick Haber</a></h5>
                             <h6 class="card-subtitle mb-2 text-muted">Assistant Professor at Stanford University</h6>
                             <p class="card-text mt-auto"><strong>Topic area:</strong> Human & AI-agent interactions and reasoning in LLMs</p>
@@ -470,9 +472,9 @@
                 <div class="col d-flex">
                     <div class="card speaker-card w-100">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="https://homes.cs.washington.edu/~niloofar/" target="_blank" class="no-underline">Niloofar Mireshghallah</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Postdoctoral Scholar at the University of Washington</h6>
-                            <p class="card-text mt-auto"><strong>Topic area:</strong> Safety and security of agentic workflows</p>
+                            <h5 class="card-title"><a href="https://www.linkedin.com/in/williamlindskog/" target="_blank" class="no-underline">William Lindskog-Münzing</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Solutions Engineer at Flower Labs</h6>
+                            <p class="card-text mt-auto"><strong>Topic area:</strong> Federated learning and agentic workflow optimization</p>
                         </div>
                     </div>
                 </div>
@@ -480,12 +482,22 @@
                 <div class="col d-flex">
                     <div class="card speaker-card w-100">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="https://research.nvidia.com/person/holger-roth" target="_blank" class="no-underline">Holger Roth</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Principal Research Scientist, NVIDIA</h6>
-                            <p class="card-text mt-auto"><strong>Topic area:</strong> Federated learning in practical applications</p>
+                            <h5 class="card-title"><a href="https://homes.cs.washington.edu/~niloofar/" target="_blank" class="no-underline">Niloofar Mireshghallah</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Postdoctoral Scholar at the University of Washington</h6>
+                            <p class="card-text mt-auto"><strong>Topic area:</strong> Safety and security of agentic workflows</p>
                         </div>
                     </div>
                 </div>
+
+<!--                <div class="col d-flex">-->
+<!--                    <div class="card speaker-card w-100">-->
+<!--                        <div class="card-body d-flex flex-column">-->
+<!--                            <h5 class="card-title"><a href="https://research.nvidia.com/person/holger-roth" target="_blank" class="no-underline">Holger Roth</a></h5>-->
+<!--                            <h6 class="card-subtitle mb-2 text-muted">Principal Research Scientist, NVIDIA</h6>-->
+<!--                            <p class="card-text mt-auto"><strong>Topic area:</strong> Federated learning in practical applications</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="col d-flex">
                     <div class="card speaker-card w-100">
@@ -512,12 +524,169 @@
         <!-- Schedule Section -->
         <section id="program">
             <div class="container">
-                <h2 class="my-4 headline-underline">Workshop Schedule</h2>
-                <p>
-                    The workshop will be held on <b>Saturday, July 19, 2025, 8.30 a.m. – 5.15 p.m. PST</b>.
-                    We will be in <b>Room 215-216</b> at Vancouver Convention Center.
-                    The detailed schedule will be announced closer to the workshop date.
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="my-4 headline-underline">Workshop Schedule</h2>
+                        <p>
+                            The workshop will be held on <b>Saturday, July 19, 2025, 8.30 a.m. – 5.15 p.m. PST</b>.
+                            We will be in <b>Room 215-216</b> at Vancouver Convention Center.
+                            The schedule is subject to change.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col"><strong>Time</strong></th>
+                                        <th scope="col"><strong>Name</strong></th>
+                                        <th scope="col"><strong>Speaker</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>08:30 - 08:35</td>
+                                        <td>Welcome</td>
+                                        <td>Organizers</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08:35 - 09:00</td>
+                                        <td>Invited Talk #1: Title TBA</td>
+                                        <td>Han Yu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 09:10</td>
+                                        <td>Lightning Talk #1: DBA-DFL: Towards Distributed Backdoor Attacks with Network Detection in Decentralized Federated Learning</td>
+                                        <td>Bohan Liu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:10 - 09:20</td>
+                                        <td>Lightning Talk #2: CAF-I: A Collaborative Multi-Agent Framework for Enhanced Irony Detection with Large Language Models</td>
+                                        <td>Ziqi Liu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:20 - 09:45</td>
+                                        <td>Invited Talk #2: Title TBA (Remote)</td>
+                                        <td>Yuejie Chi</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr class="break-row">
+                                        <td>09:45 - 10:00</td>
+                                        <td>Coffee Break</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr>
+                                        <td>10:00 - 10:25</td>
+                                        <td>Invited Talk #3: Title TBA</td>
+                                        <td>Aviral Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:25 - 10:35</td>
+                                        <td>Lightning Talk #3: MAD-Sherlock: Multi-Agent Debate for Visual Misinformation Detection</td>
+                                        <td>Kumud Lakara</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:35 - 10:45</td>
+                                        <td>Lightning Talk #4: Interpretable Multi-Agent Communication via Information Gating</td>
+                                        <td>Stav Belogolovsky</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:45 - 11:10</td>
+                                        <td>Invited Talk #4: Title TBA</td>
+                                        <td>Chi Wang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:10 - 11:35</td>
+                                        <td>Invited Talk #5: Title TBA (Remote)</td>
+                                        <td>Christopher G. Brinton</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr>
+                                        <td>11:35 - 12:30</td>
+                                        <td>Poster Session</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr class="break-row">
+                                        <td>12:30 - 13:00</td>
+                                        <td>Lunch (provided by ICML conference)</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr>
+                                        <td>13:00 - 13:25</td>
+                                        <td>Invited Talk #6: Title TBA</td>
+                                        <td>Nick Haber</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:25 - 13:35</td>
+                                        <td>Lightning Talk #5: AGENT KB: A Hierarchical Memory Framework for Cross-Domain Agentic Problem Solving</td>
+                                        <td>Robert Tang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:35 - 13:45</td>
+                                        <td>Lightning Talk #6: Generalizing Trust: Weak-to-Strong Trustworthiness in Language Models</td>
+                                        <td>Lillian Sun</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:45 - 13:55</td>
+                                        <td>Lightning Talk #7: Who Should Be Consulted? Targeted Expert Selection for Rare Disease Diagnosis</td>
+                                        <td>Yinghao Fu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:55 - 14:05</td>
+                                        <td>Lightning Talk #8: LLMSELECTOR: Learning to Select Models in Compound AI Systems</td>
+                                        <td>Lingjiao Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:05 - 14:30</td>
+                                        <td>Invited Talk #7: Title TBA</td>
+                                        <td>William Lindskog-Münzing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:30 - 14:55</td>
+                                        <td>Invited Talk #8: Title TBA</td>
+                                        <td>TBA</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr class="break-row">
+                                        <td>14:55 - 15:30</td>
+                                        <td>Coffee Break</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr><td></td><td></td><td></td></tr>
+                                    <tr>
+                                        <td>15:30 - 15:55</td>
+                                        <td>Invited Talk #9: Title TBA</td>
+                                        <td>Niloofar Mireshghallah</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:55 - 16:05</td>
+                                        <td>Lightning Talk #9: MobileA3gent: Training Mobile GUI Agents Using Decentralized Self-Sourced Data from Diverse Users</td>
+                                        <td>Wen-Hao Wang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:05 - 16:15</td>
+                                        <td>Lightning Talk #10: Mitigating Unintended Memorization with LoRA in Federated Learning for LLMs</td>
+                                        <td>Thierry Bossy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:15 - 17:00</td>
+                                        <td>Panel Discussion</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17:00 - 17:15</td>
+                                        <td>Awards & Closing Remarks</td>
+                                        <td>Organizers</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
